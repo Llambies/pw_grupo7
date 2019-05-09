@@ -1,11 +1,8 @@
-// http: //dapasa.webs.upv.es/proyectoGTI1b/api/v1.0/parcelas?id=1
-
-
-
+// http://dapasa.webs.upv.es/proyectoGTI1b/api/v1.0/parcelas?id=1
 
 
 function getParcelas(idUsuario) {
-    url = 'http://dapasa.webs.upv.es/proyectoGTI1b/api/v1.0/parcelas?id=' + idUsuario;
+    url = 'https://admallla.upv.edu.es/zonacliente.php?id=' + idUsuario;
 
     fetch(url).then(function (respuesta) {
         //console.log(respuesta);
@@ -31,7 +28,7 @@ function crearListaParcelas(datosParcelas, idContenedor) {
 }
 var aux=[]
 var aux2=[]
-var aux3=[]
+
 function seleccionarParcela(seleccionada, idParcela, datosParcelas, punto, color,parcelaID,datos,cajaID) {
     console.log("Parcela " + idParcela + " seleccionada " + seleccionada);
 
@@ -80,19 +77,6 @@ function seleccionarParcela(seleccionada, idParcela, datosParcelas, punto, color
 
 }
 
-function media(coso){
-    var a=0;
-    var o=0;
-    for (var i = 0; i < coso.length; i++) {
-        a=(a+coso[i].lat)
-        o=(o+coso[i].lon)
-    }
-    a=a/coso.length
-    o=o/coso.length
-    return var listo[a,o]
-    
-}
-
 function dibujarPoligono(vertices, color) {
     var poligono = new google.maps.Polygon({
         paths: vertices,
@@ -106,7 +90,7 @@ function dibujarPoligono(vertices, color) {
 		return poligono;
 }
 
-var a1=media(aux2)
+
 
 
 
@@ -119,12 +103,12 @@ function dibujarNodo(puntos,datos) {
     });
 
     map.setZoom(16);
-    map.setCenter(a1[0],a1[1]);
+    map.setCenter(marker.getPosition());
     }
 
 
     var contentString='<div class="card" style="width: 18rem;">'+
-                      '<div class="card-header">'+datos[6]+'</div>'+
+                      '<div class="card-header" >'+datos[6]+'</div>'+
                       '<ul class="list-group list-group-flush">'+
                         
                         '<li class="list-group-item">Temperatura: '+datos[0]+'º</li>'+
