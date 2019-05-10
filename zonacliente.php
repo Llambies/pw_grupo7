@@ -78,8 +78,25 @@ if (!$conn) {
        
    <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
-      <div id="listaParcelas">
+    
+    <div class="col-md-10">
+   
+    
+<div class="card">
+<ul class="nav nav-tabs">
+       <li class="nav-item">
+  <a class="nav-link" onclick="openCity(event, 'parcelas')">Parcelas</a>
+    </li>
+        <li class="nav-item">
+  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
+    </li>
+
+</ul>
+<div id="parcelas" class="tabcontent">
+    <div id="listaParcelas">
     
         <?php
              while ($consulta=mysqli_fetch_array($result)) {
@@ -135,25 +152,6 @@ if (!$conn) {
              }
         ?>
     </div>
-</div>
-    <div class="col-md-10">
-   
-    
-<div class="card">
-<ul class="nav nav-tabs">
-       <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'parcelas')">Parcelas</a>
-    </li>
-        <li class="nav-item">
-  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
-    </li>
-    <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
-    </li>
-
-</ul>
-<div id="parcelas" class="tabcontent">
-
 </div>
 <div id="mapa" class="tabcontent">
     <div id="map" class="map">
