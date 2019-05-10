@@ -76,10 +76,7 @@ if (!$conn) {
 <div class="contingut">
     
        
-   <div class="container-fluid">
-  <div class="row">
-    
-    <div class="col-md-10">
+  
    
     
 <div class="card">
@@ -278,9 +275,7 @@ if (!$conn) {
 
   </div>            
    
-</div>
-  </div>
-</div>
+
 
     
 
