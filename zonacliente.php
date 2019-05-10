@@ -141,15 +141,20 @@ if (!$conn) {
     
 <div class="card">
 <ul class="nav nav-tabs">
-       
+       <li class="nav-item">
+  <a class="nav-link" onclick="openCity(event, 'parcelas')">Parcelas</a>
+    </li>
         <li class="nav-item">
-  <a class="nav-link active" onclick="openCity(event, 'London')">Mapa</a>
+  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
     </li>
     <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'Paris')">Datos</a>
+  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
     </li>
 
 </ul>
+<div id="parcelas" class="tabcontent">
+
+</div>
 <div id="mapa" class="tabcontent">
     <div id="map" class="map">
         <script>
