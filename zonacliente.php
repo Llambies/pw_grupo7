@@ -150,7 +150,7 @@ if (!$conn) {
     </li>
 
 </ul>
-<div id="London" class="tabcontent">
+<div id="mapa" class="tabcontent">
     <div id="map" class="map">
         <script>
             var map;
@@ -175,7 +175,7 @@ if (!$conn) {
 
      
 
-<div id="Paris" class="tabcontent">
+<div id="datos" class="tabcontent">
   
 
 
