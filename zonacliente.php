@@ -81,9 +81,6 @@ if (!$conn) {
     
 <div class="card">
 <ul class="nav nav-tabs">
-       <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'parcelas')">Parcelas</a>
-    </li>
         <li class="nav-item">
   <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
     </li>
@@ -92,8 +89,8 @@ if (!$conn) {
     </li>
 
 </ul>
-<div id="parcelas" class="tabcontent">
-    <div id="listaParcelas">
+
+    <div id="listaParcelas" class="col-md-4">
     
         <?php
              while ($consulta=mysqli_fetch_array($result)) {
@@ -149,10 +146,8 @@ if (!$conn) {
              }
         ?>
     </div>
-</div>
-<<<<<<< HEAD
+
 <div id="mapa" class="tabcontent">
-=======
     <div class="col-md-10">
    
     
@@ -168,7 +163,7 @@ if (!$conn) {
 
 </ul>
 <div id="London" class="tabcontent">
->>>>>>> parent of 12f0c79... Update zonacliente.php
+
     <div id="map" class="map">
         <script>
             var map;
