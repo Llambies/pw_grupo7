@@ -150,7 +150,25 @@ if (!$conn) {
         ?>
     </div>
 </div>
+<<<<<<< HEAD
 <div id="mapa" class="tabcontent">
+=======
+    <div class="col-md-10">
+   
+    
+<div class="card">
+<ul class="nav nav-tabs">
+       
+        <li class="nav-item">
+  <a class="nav-link active" onclick="openCity(event, 'London')">Mapa</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" onclick="openCity(event, 'Paris')">Datos</a>
+    </li>
+
+</ul>
+<div id="London" class="tabcontent">
+>>>>>>> parent of 12f0c79... Update zonacliente.php
     <div id="map" class="map">
         <script>
             var map;
@@ -175,7 +193,7 @@ if (!$conn) {
 
      
 
-<div id="datos" class="tabcontent">
+<div id="Paris" class="tabcontent">
   
 
 
