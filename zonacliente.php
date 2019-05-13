@@ -69,20 +69,16 @@ if (!$conn) {
     <header>
         <img src="./imgs/logo_u15.svg" alt="Logo Empresarial">
        
-        <a href="./index.php"> <button class="cerrar">Cerrar tu sesión</button></a>
+        <a href="./index.php"> <button class="cerrar">Cerrar sesión</button></a>
 
     </header>
-
 <div class="contingut">
     
        
-  
-   
-    
-<div class="card">
-
-
-    <div id="listaParcelas" class="col-md-4">
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <div id="listaParcelas">
     
         <?php
              while ($consulta=mysqli_fetch_array($result)) {
@@ -132,22 +128,13 @@ if (!$conn) {
                     echo    ";var vertex".$parce."=";
                     echo    json_encode($vertices);
                     echo    ";</script>";
-                    echo    '<div id="caja'.$parce.'" class="checkparcela" for="check'.$parce.'" style="border-right:'.$color.' 20px solid;"><input id="check'.$parce.'" class="checkbox" type="checkbox" onchange="seleccionarParcela(this.checked,'.$parce.',vertex'.$parce.',nodo'.$parce.',color'.$parce.',parcelaid'.$parce.',datos'.$parce.',caja'.$parce.')" ><label class="nombreparcela" for="check'.$parce.'">'.$nombre.'</label></div><br>';
+                    echo    '<div id="caja'.$parce.'" class="checkparcela" for="check'.$parce.'" style="border-right:'.$color.' 20px solid;"><input id="check'.$parce.'" class="checkbox" type="checkbox" onchange="seleccionarParcela(this.checked,'.$parce.',vertex'.$parce.',nodo'.$parce.',color'.$parce.',parcelaid'.$parce.',datos'.$parce.',caja'.$parce.')"><label class="nombreparcela" for="check'.$parce.'">'.$nombre.'</label></div><br>';
                     echo ' <style type="text/css">:root {color'.$parce.':'.$color.';}</style>';
                  }
              }
         ?>
     </div>
-<ul class="nav nav-tabs">
-        <li class="nav-item">
-  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
-    </li>
-    <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
-    </li>
-
-</ul>
-<div id="mapa" class="tabcontent">
+</div>
     <div class="col-md-10">
    
     
@@ -163,7 +150,6 @@ if (!$conn) {
 
 </ul>
 <div id="London" class="tabcontent">
-
     <div id="map" class="map">
         <script>
             var map;
@@ -288,7 +274,9 @@ if (!$conn) {
 
   </div>            
    
-
+</div>
+  </div>
+</div>
 
     
 
@@ -300,7 +288,6 @@ if (!$conn) {
 
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </div>
-
 </body>
 
 </html>
