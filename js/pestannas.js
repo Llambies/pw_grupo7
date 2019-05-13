@@ -17,5 +17,25 @@ function openCity(evt, cityName) {
 
 
 
+function showdetails(wwww) {
+  if (wwww==1) {
+    console.log(wwww)
+    document.getElementById("alpha").style.display = "none";
+    document.getElementById("beta").style.display = "block";
+    
+
+    
+  }
+  else{
+    console.log(wwww)
+    document.getElementById("alpha").style.display = "block";
+    document.getElementById("beta").style.display = "none";
+    
+
+    
+  }
+
+}
+
 
 

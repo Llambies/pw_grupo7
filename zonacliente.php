@@ -82,7 +82,10 @@ if (!$conn) {
 <div class="card">
 <ul class="nav nav-tabs">
        <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'parcelas')">Parcelas</a>
+  <a class="nav-link" id="alpha" onclick="showdetails(1)">Parcelas</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" id="beta" onclick="showdetails(0)">Parcelas</a>
     </li>
         <li class="nav-item">
   <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
