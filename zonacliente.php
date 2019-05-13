@@ -85,7 +85,7 @@ if (!$conn) {
   <a class="nav-link" id="alpha" onclick="showdetails(1)">Parcelas</a>
     </li>
     <li class="nav-item">
-  <a class="nav-link" id="beta" onclick="showdetails(0)">Parcelas</a>
+  <a class="nav-link" id="beta" style="display: none;" onclick="showdetails(0)">Parcelas</a>
     </li>
         <li class="nav-item">
   <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
