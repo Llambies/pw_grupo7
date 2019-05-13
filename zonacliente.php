@@ -95,7 +95,7 @@ if (!$conn) {
     </li>
 
 </ul>
-<div id="parcelas" class="tabcontent">
+<div id="beta" class="tabcontent">
     <div id="listaParcelas">
     
         <?php
