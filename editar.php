@@ -53,8 +53,8 @@
     <?php 
 
     $v1 = $_POST['variable1'];
-    echo $v1;
-            $result = mysqli_query($conn, "SELECT * FROM usuariosparcelas WHERE IdUsuario = '$id'");
+    //echo $v1;
+            $result = mysqli_query($conn, "SELECT * FROM usuariosparcelas WHERE IdUsuario = '$v1'");
             while ($consulta=mysqli_fetch_array($result)) {
                 $parce=$consulta['IdParcela'];
                 $aux = mysqli_query($conn, "SELECT * FROM parcelas WHERE IdParcela = '$parce'");
@@ -73,8 +73,7 @@
   
   <div class="card-body">
     
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
   </div>
 </div>
 
