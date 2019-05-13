@@ -80,15 +80,7 @@ if (!$conn) {
    
     
 <div class="card">
-<ul class="nav nav-tabs">
-        <li class="nav-item">
-  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
-    </li>
-    <li class="nav-item">
-  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
-    </li>
 
-</ul>
 
     <div id="listaParcelas" class="col-md-4">
     
@@ -146,7 +138,15 @@ if (!$conn) {
              }
         ?>
     </div>
+<ul class="nav nav-tabs">
+        <li class="nav-item">
+  <a class="nav-link active" onclick="openCity(event, 'mapa')">Mapa</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" onclick="openCity(event, 'datos')">Datos</a>
+    </li>
 
+</ul>
 <div id="mapa" class="tabcontent">
     <div class="col-md-10">
    
