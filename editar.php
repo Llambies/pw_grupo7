@@ -48,6 +48,8 @@
         <p class="Boton_sesion" onclick=""><a href="./index.php">Cerrar sesión</a></p>
 
     </header>
+       <div class="card">
+  <h5 class="card-header">Featured</h5>
     <?php 
 
     $v1 = $_POST['variable1'];
@@ -59,7 +61,7 @@
                 while ($consulta2=mysqli_fetch_array($aux)) {
                    $nombre=$consulta2['Nombre'];
                    $color=$consulta2['ColorParcela'];
-                   echo $nombre.$color;
+                   echo '<h5 class="card-title" style="border-right:'.$color.' 20px solid;">'.$nombre.'</h5>';
 
                }
            }
@@ -68,10 +70,9 @@
 
      ?>
 
-     <div class="card">
-  <h5 class="card-header">Featured</h5>
+  
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
+    
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
