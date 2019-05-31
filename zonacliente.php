@@ -68,23 +68,21 @@ if (!$conn) {
     <header>
         <img src="./imgs/logo_u15.svg" alt="Logo Empresarial">
        
-        <a href="./index.php"> <button class="btn btn-success">Cerrar sesión</button></a>
+        <a href="./index.php"><button class="cerrar">Cerrar sesión</button></a>
 
     </header>
 
     
-   
-    
 <div class="card">
 <ul class="nav nav-tabs">
        
-        <li class="nav-item">
+        <li id="n1" class="nav-item selected" onclick="mapaActivo()">
   <a class="nav-link active" onclick="openCity(event, 'London')">Mapa</a>
     </li>
-    <li class="nav-item">
+    <li id="n2" class="nav-item" onclick="datosActivo()">
   <a class="nav-link" onclick="openCity(event, 'Paris')">Datos</a>
     </li>
-
+    <h4>Seleccione una parcela para ver sus datos</h4> 
 </ul>
 <div id="London" class="tabcontent">
     <div id="map" class="map">
@@ -112,9 +110,7 @@ if (!$conn) {
      
 
 <div id="Paris" class="tabcontent">
-  
 <br><br><br>
-
  <?php
             $result = mysqli_query($conn, "SELECT * FROM usuariosparcelas WHERE IdUsuario = '$id'");
             while ($consulta=mysqli_fetch_array($result)) {
@@ -206,6 +202,7 @@ if (!$conn) {
              }
 
         ?>
+       
 
 </div>
 
@@ -226,7 +223,7 @@ if (!$conn) {
          <br>
          <!-- -------------------- -->
          
-        <?php
+       <?php
             $result = mysqli_query($conn, "SELECT * FROM usuariosparcelas WHERE IdUsuario = '$id'");
              while ($consulta=mysqli_fetch_array($result)) {
 

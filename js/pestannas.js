@@ -12,7 +12,25 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+function mapaActivo() {
+    var mapa = document.getElementById("n1");
+    var datos = document.getElementById("n2");
+        
+    if (mapa.className == "nav-item") {
+        mapa.className = "nav-item selected";
+        datos.className = "nav-item";
+    }
+}
 
+function datosActivo() {
+    var mapa = document.getElementById("n1");
+    var datos = document.getElementById("n2");
+    
+    if (datos.className == "nav-item") {
+        datos.className = "nav-item selected";
+        mapa.className = "nav-item";
+    }
+}
 
 
 

@@ -37,7 +37,7 @@
      
     <header>
         <img src="./imgs/logo_u15.svg" alt="Logo Empresarial">
-        <button class="btn btn-success"  onclick="window.location.href = './zonaadmin.php';">Atras</button>
+        <button class="btn btn-success"  onclick="window.location.href = './index.php';">Cerrar sesión</button>
 
     </header>
 
@@ -59,7 +59,7 @@
 
 <div class="tab-content" id="nav-tabContent">
 <div class="tab-pane fade show active" id="nav-lista" role="tabpanel" aria-labelledby="nav-lista-tab">
-  <form action="zonaadminusuarios.php" method="post" class="selectorcliente">
+  <form action="zonaadmin.php" method="post" class="selectorcliente">
             <?php 
                 //$_GET["nombre"];
 
@@ -119,7 +119,7 @@
         
 </div>
 <div class="tab-pane fade" id="nav-añadirU" role="tabpanel" aria-labelledby="nav-añadirU-tab" >
-  <form action="zonaadminusuarios.php" method="post" class="formulario">
+  <form action="zonaadmin.php" method="post" class="formulario">
           
             <div class="form-row" >
                <div class="form-group col-md-6">
@@ -145,7 +145,6 @@
                  <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
                </div>
              </div>
-             <?php echo '<input type="hidden" name="variable1" value="'.$usuario.'" />' ?>
             <center><button type="submit" class="btn btn-info" name="btn1">Registrar usuario</button></center>
         </form>
         <?php 

@@ -35,17 +35,18 @@ header img {
     height: 50px;
 }
 
-header a .cerrar{
-margin-right: 1rem;
-background: #820053;
-border: none;
-border-radius: 5px;
+header a .cerrar {
+    margin-right: 1rem;
+    background: #820053;
+    width: 105px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
     color: #fff;
 }
 
-
-.contingut{
-   
+header a .cerrar:hover {
+    background: rgb(105, 0, 44);
 }
 
 .ventanas{
@@ -86,10 +87,37 @@ border-radius: 5px;
  
 }
 
+.nav-item {
+    color: #888;
+}
+
+.nav-item:hover {
+    border: 1px solid rgba(130,0,83,0.5); 
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-item.selected {
+    border: 1px solid #820053;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    color: #000;
+}
+
+h4 {
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 4px;
+    height: 30px;
+}
 
 
 #London{
   display: block;
+}
+
+.collapse {
+    box-shadow: 3px 3px 3px 2px rgba(0,0,0,.7);
 }
 
 .map {
@@ -207,5 +235,13 @@ font-size: 10px;
     .tabcontent{
         max-height: 90vh;
         height: 10000px;
+    }
+}
+
+@media(max-width: 800px){
+    h4 {
+        margin-left: 10%;
+        font-size: 16px;
+        width: 200px;
     }
 }

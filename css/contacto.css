@@ -26,22 +26,18 @@
             height: 50px;
         }
         
-        header .boton-cerrar {
-            display: flex;
-            margin: 50px;
-            width: 119px;
-            height: 37px;
+        header a .boton-cerrar {
+            margin-right: 1rem;
             background: #820053;
-            color: #fff;
+            width: 105px;
+            height: 30px;
             border: none;
             border-radius: 5px;
-            padding: 0.2rem;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
         }
         
-        header .boton-cerrar:hover {
+        header a .boton-cerrar:hover {
             background: rgb(105, 0, 44);
         }
         

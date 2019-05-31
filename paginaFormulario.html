@@ -20,7 +20,7 @@
    <!-- ------------------ HEADER --------------------- -->
     <header>
         <a href="#"><img src="imgs/logo_u15.svg" alt="logo"></a>
-        <a href="index.php" class="boton-cerrar">Atrás</a>
+        <a href="index.php"><button type="button" class="boton-cerrar">Atrás</button></a>
     </header>
     
     <!-- ------------------ CONTENEDOR PRINCIPAL: INFO EMPRESA --------------------- -->
@@ -71,11 +71,11 @@
         
         <div class="form">
             <form id="formulario" method="post" action="post.php">
-                <input type="text" name ="nombre" placeholder="Nombre">
-                <input type="text" name="apellidos" placeholder="Apellidos">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="telefono" placeholder="Teléfono">
-                <textarea cols="30" rows="10" name="mensaje" placeholder="¿En qué te podemos ayudar?"></textarea>
+                <input type="text" name ="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellidos" placeholder="Apellidos" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="telefono" placeholder="Teléfono" required>
+                <textarea cols="30" rows="10" name="mensaje" placeholder="¿En qué te podemos ayudar?" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
